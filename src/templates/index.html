@@ -1,0 +1,332 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>Soldadores</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
+</head>
+<body>
+    <h1 class="text-center mt-5 mb-5 text-primary">Consulta de Datos</h1>
+    
+    <div class="container">
+        <div class="card shadow">
+            <div class="card-body">
+                <form action="/user" method="POST">
+                    <div class="row mb-2">
+                        <div class="col">
+                            <label for="RUT">RUT</label>
+                            <input type="text" class="form-control mb-2" id="RUT" name="RUT">
+                        </div>
+                        <div class="col">
+                            <label for="N">N°</label>
+                            <input type="text" class="form-control mb-2" id="N" name="N">
+                        </div>
+                        <div class="col">
+                            <label for="NOMBRE">NOMBRE</label>
+                            <input type="text" class="form-control mb-2" id="NOMBRE" name="NOMBRE">
+                        </div>
+                        <div class="col">
+                            <label for="TURNO">TURNO</label>
+                            <input type="text" class="form-control mb-2" id="TURNO" name="TURNO">
+                        </div>
+                        <div class="col">
+                            <label for="CARGO">CARGO</label>
+                            <input type="text" class="form-control mb-3" id="CARGO" name="CARGO">
+                        </div>
+                        <div class="col">
+                            <label for="ALCANCE">ALCANCE</label>
+                            <input type="text" class="form-control mb-3" id="ALCANCE" name="ALCANCE">
+                        </div>
+                        <div class="col">
+                            <label for="ESTAMPA">ESTAMPA</label>
+                            <input type="text" class="form-control mb-3" id="ESTAMPA" name="ESTAMPA">
+                        </div>
+                        <div class="col">
+                            <label for="FECHA_CALIFICACION">FECHA CALIFICACION</label>
+                            <input type="date" class="form-control mb-3" id="FECHA_CALIFICACION" name="FECHA_CALIFICACION">
+                        </div>
+                        <div class="col">
+                            <label for="INFORME_LABORATORIO">INFORME LABORATORIO</label>
+                            <input type="text" class="form-control mb-3" id="INFORME_LABORATORIO" name="INFORME_LABORATORIO">
+                        </div>
+                        <div class="col">
+                            <label for="ESTADO_DE_PAGO_CESMEC">ESTADO DE PAGO CESMEC</label>
+                            <input type="text" class="form-control mb-3" id="ESTADO_DE_PAGO_CESMEC" name="ESTADO_DE_PAGO_CESMEC">
+                        </div>
+                        <div class="col">
+                            <label for="HABILITADO_PARA_SOLDAR">HABILITADO PARA SOLDAR</label>
+                            <input type="text" class="form-control mb-3" id="HABILITADO_PARA_SOLDAR" name="HABILITADO_PARA_SOLDAR">
+                        </div>
+                        <div class="col">
+                            <label for="RANGO_DE_DIAMETROS_O_ESPESORES">RANGO DE DIAMETROS O ESPESORES</label>
+                            <input type="text" class="form-control mb-3" id="RANGO_DE_DIAMETROS_O_ESPESORES" name="RANGO_DE_DIAMETROS_O_ESPESORES">
+                        </div>
+                        <div class="col">
+                            <label for="WPQ_AVA">WPQ AVA</label>
+                            <input type="text" class="form-control mb-3" id="WPQ_AVA" name="WPQ_AVA">
+                        </div>
+                        <div class="col">
+                            <label for="POSICION_CALIFICADA">POSICION CALIFICADA</label>
+                            <input type="text" class="form-control mb-3" id="POSICION_CALIFICADA" name="POSICION_CALIFICADA">
+                        </div>
+                        <div class="col">
+                            <label for="MATERIAL_BASE">MATERIAL BASE</label>
+                            <input type="text" class="form-control mb-3" id="MATERIAL_BASE" name="MATERIAL_BASE">
+                        </div>
+                        <div class="col">
+                            <label for="PROCESO">PROCESO</label>
+                            <input type="text" class="form-control mb-3" id="PROCESO" name="PROCESO">
+                        </div>
+                        <div class="col">
+                            <label for="NORMA">NORMA</label>
+                            <input type="text" class="form-control mb-3" id="NORMA" name="NORMA">
+                        </div>
+                        <div class="col">
+                            <label for="WPS">WPS</label>
+                            <input type="text" class="form-control mb-3" id="WPS" name="WPS">
+                        </div>
+                        <div class="col">
+                            <label for="PQR">PQR</label>
+                            <input type="text" class="form-control mb-3" id="PQR" name="PQR">
+                        </div>
+                        <div class="col">
+                            <label for="ESTATUS">ESTATUS</label>
+                            <input type="text" class="form-control mb-3" id="ESTATUS" name="ESTATUS">
+                        </div>
+                        <div class="col">
+                            <label for="CONTRATADO_FINIQUITADO_O_NO_HABILITADO">CONTRATADO FINIQUITADO O NO HABILITADO</label>
+                            <input type="text" class="form-control mb-3" id="CONTRATADO_FINIQUITADO_O_NO_HABILITADO" name="CONTRATADO_FINIQUITADO_O_NO_HABILITADO">
+                        </div>
+                        <div class="col">
+                            <label for="OBSERVACIONES">OBSERVACIONES</label>
+                            <input type="text" class="form-control mb-3" id="OBSERVACIONES" name="OBSERVACIONES">
+                        </div>
+                        <div class="col">
+                            <button class="btn btn-primary mb-3 mt-4" type="submit">Guardar</button>
+                        </div>
+                    </div>
+                </form>
+                
+                <table class="table table-striped">
+                    <thead>
+                        <tr>
+                            <th scope="col">RUT</th>
+                            <th scope="col">N°</th>
+                            <th scope="col">NOMBRE</th>
+                            <th scope="col">TURNO</th>
+                            <th scope="col">CARGO</th>
+                            <th scope="col">ALCANCE</th>
+                            <th scope="col">ESTAMPA</th>
+                            <th scope="col">FECHA CALIFICACION</th>
+                            <th scope="col">INFORME LABORATORIO</th>
+                            <th scope="col">ESTADO DE PAGO CESMEC</th>
+                            <th scope="col">HABILITADO PARA SOLDAR</th>
+                            <th scope="col">RANGO DE DIAMETROS O ESPESORES</th>
+                            <th scope="col">WPQ AVA</th>
+                            <th scope="col">POSICION CALIFICADA</th>
+                            <th scope="col">MATERIAL BASE</th>
+                            <th scope="col">PROCESO</th>
+                            <th scope="col">NORMA</th>
+                            <th scope="col">WPS</th>
+                            <th scope="col">PQR</th>
+                            <th scope="col">ESTATUS</th>
+                            <th scope="col">CONTRATADO FINIQUITADO O NO HABILITADO</th>
+                            <th scope="col">OBSERVACIONES</th>
+                            <th scope="col">EDITAR</th>
+                            <th scope="col">BORRAR</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        {% for d in data %}
+                        <tr>
+                            <td>{{ d.RUT }}</td>
+                            <td>{{ d.N }}</td>
+                            <td>{{ d.NOMBRE }}</td>
+                            <td>{{ d.TURNO }}</td>
+                            <td>{{ d.CARGO }}</td>
+                            <td>{{ d.ALCANCE }}</td>
+                            <td>{{ d.ESTAMPA }}</td>
+                            <td>{{ d.FECHA_CALIFICACION }}</td>
+                            <td>{{ d.INFORME_LABORATORIO }}</td>
+                            <td>{{ d.ESTADO_DE_PAGO_CESMEC }}</td>
+                            <td>{{ d.HABILITADO_PARA_SOLDAR }}</td>
+                            <td>{{ d.RANGO_DE_DIAMETROS_O_ESPESORES }}</td>
+                            <td>{{ d.WPQ_AVA }}</td>
+                            <td>{{ d.POSICION_CALIFICADA }}</td>
+                            <td>{{ d.MATERIAL_BASE }}</td>
+                            <td>{{ d.PROCESO }}</td>
+                            <td>{{ d.NORMA }}</td>
+                            <td>{{ d.WPS }}</td>
+                            <td>{{ d.PQR }}</td>
+                            <td>{{ d.ESTATUS }}</td>
+                            <td>{{ d.CONTRATADO_FINIQUITADO_O_NO_HABILITADO }}</td>
+                            <td>{{ d.OBSERVACIONES }}</td>
+                            <td>
+                                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#editModal{{ d.id }}">Editar</button>
+                            </td>
+                            <td>
+                                <button type="button" class="btn btn-danger btn-sm" data-bs-toggle="modal" data-bs-target="#deleteModal{{ loop.index }}">Eliminar</button>
+                            </td>
+                        </tr>
+                        {% endfor %}
+                    </tbody>
+                </table>
+                
+            </div>
+        </div>
+    </div>
+    
+    <!-- Modal de Editar -->
+{% for d in data %}
+<div class="modal fade" id="editModal{{ d.id }}" tabindex="-1" aria-labelledby="editModalLabel{{ d.id }}" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="editModalLabel{{ d.id }}">Editar Soldador</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <form action="{{ url_for('edit', id=d.id) }}" method="POST">
+                    <!-- Campo RUT -->
+                    <div class="mb-3">
+                        <label for="editRUT{{ d.id }}" class="form-label">RUT</label>
+                        <input type="text" class="form-control" id="editRUT{{ d.id }}" name="RUT" value="{{ d.RUT }}">
+                    </div>
+                    <!-- Campo N° -->
+                    <div class="mb-3">
+                        <label for="editN{{ d.id }}" class="form-label">N°</label>
+                        <input type="text" class="form-control" id="editN{{ d.id }}" name="N" value="{{ d.N }}">
+                    </div>
+                    <!-- Campo NOMBRE -->
+                    <div class="mb-3">
+                        <label for="editNOMBRE{{ d.id }}" class="form-label">NOMBRE</label>
+                        <input type="text" class="form-control" id="editNOMBRE{{ d.id }}" name="NOMBRE" value="{{ d.NOMBRE }}">
+                    </div>
+                    <!-- Campo TURNO -->
+                    <div class="mb-3">
+                        <label for="editTURNO{{ d.id }}" class="form-label">TURNO</label>
+                        <input type="text" class="form-control" id="editTURNO{{ d.id }}" name="TURNO" value="{{ d.TURNO }}">
+                    </div>
+                    <!-- Campo CARGO -->
+                    <div class="mb-3">
+                        <label for="editCARGO{{ d.id }}" class="form-label">CARGO</label>
+                        <input type="text" class="form-control" id="editCARGO{{ d.id }}" name="CARGO" value="{{ d.CARGO }}">
+                    </div>
+                    <!-- Campo ALCANCE -->
+                    <div class="mb-3">
+                        <label for="editALCANCE{{ d.id }}" class="form-label">ALCANCE</label>
+                        <input type="text" class="form-control" id="editALCANCE{{ d.id }}" name="ALCANCE" value="{{ d.ALCANCE }}">
+                    </div>
+                    <!-- Campo ESTAMPA -->
+                    <div class="mb-3">
+                        <label for="editESTAMPA{{ d.id }}" class="form-label">ESTAMPA</label>
+                        <input type="text" class="form-control" id="editESTAMPA{{ d.id }}" name="ESTAMPA" value="{{ d.ESTAMPA }}">
+                    </div>
+                    <!-- Campo FECHA CALIFICACION -->
+                    <div class="mb-3">
+                        <label for="editFECHA_CALIFICACION{{ d.id }}" class="form-label">FECHA CALIFICACION</label>
+                        <input type="date" class="form-control" id="editFECHA_CALIFICACION{{ d.id }}" name="FECHA_CALIFICACION" value="{{ d.FECHA_CALIFICACION }}">
+                    </div>
+                    <!-- Campo INFORME LABORATORIO -->
+                    <div class="mb-3">
+                        <label for="editINFORME_LABORATORIO{{ d.id }}" class="form-label">INFORME LABORATORIO</label>
+                        <input type="text" class="form-control" id="editINFORME_LABORATORIO{{ d.id }}" name="INFORME_LABORATORIO" value="{{ d.INFORME_LABORATORIO }}">
+                    </div>
+                    <!-- Campo ESTADO DE PAGO CESMEC -->
+                    <div class="mb-3">
+                        <label for="editESTADO_DE_PAGO_CESMEC{{ d.id }}" class="form-label">ESTADO DE PAGO CESMEC</label>
+                        <input type="text" class="form-control" id="editESTADO_DE_PAGO_CESMEC{{ d.id }}" name="ESTADO_DE_PAGO_CESMEC" value="{{ d.ESTADO_DE_PAGO_CESMEC }}">
+                    </div>
+                    <!-- Campo HABILITADO PARA SOLDAR -->
+                    <div class="mb-3">
+                        <label for="editHABILITADO_PARA_SOLDAR{{ d.id }}" class="form-label">HABILITADO PARA SOLDAR</label>
+                        <input type="text" class="form-control" id="editHABILITADO_PARA_SOLDAR{{ d.id }}" name="HABILITADO_PARA_SOLDAR" value="{{ d.HABILITADO_PARA_SOLDAR }}">
+                    </div>
+                    <!-- Campo RANGO DE DIAMETROS O ESPESORES -->
+                    <div class="mb-3">
+                        <label for="editRANGO_DE_DIAMETROS_O_ESPESORES{{ d.id }}" class="form-label">RANGO DE DIAMETROS O ESPESORES</label>
+                        <input type="text" class="form-control" id="editRANGO_DE_DIAMETROS_O_ESPESORES{{ d.id }}" name="RANGO_DE_DIAMETROS_O_ESPESORES" value="{{ d.RANGO_DE_DIAMETROS_O_ESPESORES }}">
+                    </div>
+                    <!-- Campo WPQ AVA -->
+                    <div class="mb-3">
+                        <label for="editWPQ_AVA{{ d.id }}" class="form-label">WPQ AVA</label>
+                        <input type="text" class="form-control" id="editWPQ_AVA{{ d.id }}" name="WPQ_AVA" value="{{ d.WPQ_AVA }}">
+                    </div>
+                    <!-- Campo POSICION CALIFICADA -->
+                    <div class="mb-3">
+                        <label for="editPOSICION_CALIFICADA{{ d.id }}" class="form-label">POSICION CALIFICADA</label>
+                        <input type="text" class="form-control" id="editPOSICION_CALIFICADA{{ d.id }}" name="POSICION_CALIFICADA" value="{{ d.POSICION_CALIFICADA }}">
+                    </div>
+                    <!-- Campo MATERIAL BASE -->
+                    <div class="mb-3">
+                        <label for="editMATERIAL_BASE{{ d.id }}" class="form-label">MATERIAL BASE</label>
+                        <input type="text" class="form-control" id="editMATERIAL_BASE{{ d.id }}" name="MATERIAL_BASE" value="{{ d.MATERIAL_BASE }}">
+                    </div>
+                    <!-- Campo PROCESO -->
+                    <div class="mb-3">
+                        <label for="editPROCESO{{ d.id }}" class="form-label">PROCESO</label>
+                        <input type="text" class="form-control" id="editPROCESO{{ d.id }}" name="PROCESO" value="{{ d.PROCESO }}">
+                    </div>
+                    <!-- Campo NORMA -->
+                    <div class="mb-3">
+                        <label for="editNORMA{{ d.id }}" class="form-label">NORMA</label>
+                        <input type="text" class="form-control" id="editNORMA{{ d.id }}" name="NORMA" value="{{ d.NORMA }}">
+                    </div>
+                    <!-- Campo WPS -->
+                    <div class="mb-3">
+                        <label for="editWPS{{ d.id }}" class="form-label">WPS</label>
+                        <input type="text" class="form-control" id="editWPS{{ d.id }}" name="WPS" value="{{ d.WPS }}">
+                    </div>
+                    <!-- Campo PQR -->
+                    <div class="mb-3">
+                        <label for="editPQR{{ d.id }}" class="form-label">PQR</label>
+                        <input type="text" class="form-control" id="editPQR{{ d.id }}" name="PQR" value="{{ d.PQR }}">
+                    </div>
+                    <!-- Campo ESTATUS -->
+                    <div class="mb-3">
+                        <label for="editESTATUS{{ d.id }}" class="form-label">ESTATUS</label>
+                        <input type="text" class="form-control" id="editESTATUS{{ d.id }}" name="ESTATUS" value="{{ d.ESTATUS }}">
+                    </div>
+                    <!-- Campo CONTRATADO FINIQUITADO O NO HABILITADO -->
+                    <div class="mb-3">
+                        <label for="editCONTRATADO_FINIQUITADO_O_NO_HABILITADO{{ d.id }}" class="form-label">CONTRATADO FINIQUITADO O NO HABILITADO</label>
+                        <input type="text" class="form-control" id="editCONTRATADO_FINIQUITADO_O_NO_HABILITADO{{ d.id }}" name="CONTRATADO_FINIQUITADO_O_NO_HABILITADO" value="{{ d.CONTRATADO_FINIQUITADO_O_NO_HABILITADO }}">
+                    </div>
+                    <!-- Campo OBSERVACIONES -->
+                    <div class="mb-3">
+                        <label for="editOBSERVACIONES{{ d.id }}" class="form-label">OBSERVACIONES</label>
+                        <input type="text" class="form-control" id="editOBSERVACIONES{{ d.id }}" name="OBSERVACIONES" value="{{ d.OBSERVACIONES }}">
+                    </div>
+                    <!-- Botón para guardar cambios -->
+                    <button type="submit" class="btn btn-primary">Guardar cambios</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+{% endfor %}
+    <!-- Eliminar Modal -->
+    <div class="modal fade" id="deleteModal1" tabindex="-1" aria-labelledby="deleteModalLabel1" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="deleteModalLabel1">Eliminar Soldador</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    ¿Estás seguro de que quieres eliminar este soldador?
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+                    <button type="button" class="btn btn-danger">Eliminar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+
